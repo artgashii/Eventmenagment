@@ -145,7 +145,6 @@ font-style: italic;
     color: #fff;
 }
 
-/* Event Slider Section */
 .event-slider {
     position: relative;
     max-width: 800px;
@@ -194,7 +193,6 @@ font-style: italic;
     margin: 0 auto;
 }
 
-/* Overlay for better readability */
 .slide::after {
     content: '';
     position: absolute;
@@ -202,11 +200,10 @@ font-style: italic;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 1; /* Place the overlay behind the text */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
-/* Navigation buttons */
 .prev-btn, .next-btn {
     position: absolute;
     top: 50%;
@@ -215,7 +212,7 @@ font-style: italic;
     color: #fff;
     padding: 1rem;
     border: none;
-    font-size: 2rem;  /* Adjusted font size for '<' and '>' */
+    font-size: 2rem; 
     cursor: pointer;
     z-index: 10;
     font-weight: bold;
