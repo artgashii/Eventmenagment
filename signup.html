@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - Eventura</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="logo-placeholder">
+        <div class="logo-placeholder">
+            <img src="./uploads/eventura.png" alt="Logo" style="max-height: 50px;">
+
+          </div>
+      </div>
+      <h2>Signup</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" placeholder="Enter your surname">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button type="button" id="signupBtn">Signup</button>
+        <p id="error-message"></p>
+      </form>
+    </div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
