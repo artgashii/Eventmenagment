@@ -94,3 +94,141 @@ font-style: italic;
 .navbar .auth-buttons .signup:hover {
     background-color: #0056b3;
 }
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.hero .hero-buttons .primary-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-buttons .secondary-btn {
+    background-color: transparent;
+    color: #007bff;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-buttons .primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.hero .hero-buttons .secondary-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Event Slider Section */
+.event-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 4rem auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 400px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.slide-info h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.slide-info p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Overlay for better readability */
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1; /* Place the overlay behind the text */
+}
+
+/* Navigation buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    font-size: 2rem;  /* Adjusted font size for '<' and '>' */
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
