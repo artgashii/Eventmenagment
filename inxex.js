@@ -63,3 +63,37 @@ setInterval(() => {
 }, 4000);
 
 updateSlider();
+
+bookEventBtn.addEventListener('click', () => {
+  window.location.href = "/book-your-event"; 
+});
+
+watchVideoBtn.addEventListener('click', () => {
+  
+  const videoUrl = "https://www.youtube.com/watch?v=N8tnM9KyLos&ab_channel=TNW";
+  window.open(videoUrl, "_blank"); 
+});
+
+const galleryItems = document.querySelectorAll('.gallery-item img');
+const seeAllBtn = document.querySelector('.see-all-btn');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const fullImageSrc = item.src;
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.innerHTML = `
+            <div class="modal-content">
+                <img src="${fullImageSrc}" alt="Full view">
+                <span class="close-modal">&times;</span>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const closeModal = modal.querySelector('.close-modal');
+        closeModal.addEventListener('click', () => {
+            modal.remove();
+        });
+    });
+});
+
