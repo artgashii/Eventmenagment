@@ -21,6 +21,6 @@ document.getElementById("loginBtn").addEventListener("click", function () {
   errorMessage.style.color = "#28a745";
 
   setTimeout(() => {
-    window.location.href = "/index.html";
+    window.location.href = "index.php";
   }, 1000);
 });
