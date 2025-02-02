@@ -4,10 +4,8 @@ require_once 'config.php';
 require_once 'navbar.php';
 require_once 'footer.php';
 
-// Get event ID from URL parameter
 $event_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-// Fetch event details from the database
 $sql = "SELECT e.*, ec.name as category_name 
         FROM events e 
         LEFT JOIN event_categories ec ON e.category_id = ec.id 
@@ -20,7 +18,7 @@ $result = $stmt->get_result();
 if ($result->num_rows > 0) {
     $event = $result->fetch_assoc();
 } else {
-    // Redirect to gallery if event not found
+
     header("Location: EventGallery.php");
     exit();
 }
