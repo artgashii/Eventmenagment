@@ -84,7 +84,7 @@ function createEvent($conn, $title, $description, $event_date, $end_date, $locat
         return false;
     }
     
-=    if ($image["size"] > 5000000) {
+    if ($image["size"] > 5000000) {
         return false;
     }
     
